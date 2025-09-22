@@ -1,0 +1,149 @@
+@media (min-width: 400px) {
+  /* Header */
+  .header-wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .header-image {
+    width: 150px;
+  }
+
+  /* Main section */
+
+  /* Introduction section */
+  .introduction-wrapper {
+    height: 600px;
+    width: 42%;
+  }
+
+  .introduction-text h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .introduction-text p {
+    margin: 0 0 24px;
+    text-align: center;
+  }
+
+  .membership p {
+    line-height: 1.5;
+  }
+
+  .membership-form {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  #email {
+    padding: 15px 15px;
+    font-size: 18px;
+  }
+
+  .membership-btn {
+    padding: 17px 30px;
+    font-size: 18px;
+  }
+
+  /* Scroll to top */
+  #arrow-btn {
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+  }
+
+  /* Movie section */
+  .movie-section {
+    margin: 100px 0;
+  }
+
+  .movie-wrapper {
+    width: 80%;
+    gap: 10px;
+  }
+
+  .movie-list {
+    gap: 20px;
+  }
+
+  .movie img {
+    height: 400px;
+  }
+
+  .more-movies-btn {
+    padding: 20px 30px;
+  }
+
+  .more-movies-link {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  .questions-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  /* Footer */
+  .questions-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Header */
+  .header-wrapper {
+    width: 85%;
+  }
+
+  /* Main section */
+
+  /* Introduction section */
+  .introduction-wrapper {
+    height: 700px;
+    width: 36%;
+  }
+
+  .introduction-text h1 {
+    font-size: 56px;
+    margin: 0 0 16px;
+  }
+
+  .introduction-text p {
+    margin: 0 0 32px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .membership-btn {
+    font-size: 20px;
+  }
+
+  /* Scroll to top */
+  #arrow-btn {
+    height: 60px;
+    width: 60px;
+    font-size: 50px;
+  }
+
+  /* Movie section */
+  .movie-wrapper {
+    width: 85%;
+    gap: 20px;
+  }
+
+  .movie-list {
+    gap: 30px;
+  }
+
+  .movie img {
+    height: 500px;
+  }
+
+  /* Footer */
+  .questions-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

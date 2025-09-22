@@ -1,0 +1,189 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --netflix-red-color: rgb(214, 28, 28);
+  --netflix-hover-color: rgb(193, 17, 25);
+  --border-color: #8c8274;
+  --incorrect-color: #a10000;
+  --correct-color: #008b15;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Header */
+header {
+  margin: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 1000;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header-image {
+  width: 100px;
+}
+
+.home-page-btn {
+  margin-right: 40px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--netflix-red-color);
+  cursor: pointer;
+}
+
+.home-page-btn:hover {
+  background-color: var(--netflix-hover-color);
+}
+
+.home-page-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Registration section */
+/* .registration {
+} */
+
+.registration-wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#first-name,
+#surname,
+#email,
+#password,
+#password-confirm {
+  width: 100%;
+  padding: 15px 15px;
+  border: 2px solid var(--border-color);
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#first-name:focus,
+#surname:focus,
+#email:focus,
+#password:focus,
+#password-confirm:focus {
+  background-color: var(--border-color);
+  border: 2px solid var(--text-color);
+}
+
+#first-name:focus::placeholder,
+#surname:focus::placeholder,
+#email:focus::placeholder,
+#password:focus::placeholder,
+#password-confirm:focus::placeholder {
+  color: var(--text-color);
+}
+
+input.valid {
+  border: 2px solid var(--correct-color) !important;
+}
+
+input.invalid {
+  border: 2px solid var(--incorrect-color) !important;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: var(--netflix-red-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: var(--netflix-hover-color);
+}
+
+/* Query */
+
+@media (min-width: 400px) {
+  /* Header */
+  .header-wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .header-image {
+    width: 150px;
+  }
+
+  /* Registration section */
+  .registration-wrapper {
+    width: 70%;
+  }
+
+  #first-name,
+  #surname,
+  #email,
+  #password,
+  #password-confirm {
+    padding: 20px 20px;
+    font-size: 18px;
+  }
+
+  .send-btn {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .registration-wrapper {
+    width: 60%;
+  }
+
+  #first-name,
+  #surname,
+  #email,
+  #password,
+  #password-confirm {
+    padding: 25px 25px;
+    font-size: 20px;
+  }
+
+  .send-btn {
+    padding: 15px 0;
+    font-size: 22px;
+  }
+}

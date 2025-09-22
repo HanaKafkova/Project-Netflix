@@ -1,0 +1,255 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --netflix-red-color: rgb(214, 28, 28);
+  --netflix-hover-color: rgb(193, 17, 25);
+  --border-color: #8c8274;
+  --questions-color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin-top: 85px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 1000;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  padding: 20px 0;
+  margin-left: 10px;
+}
+
+.header-image {
+  width: 100px;
+}
+
+.registration-btn {
+  margin-right: 10px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: var(--netflix-red-color);
+  cursor: pointer;
+}
+
+.registration-btn:hover {
+  background-color: var(--netflix-hover-color);
+}
+
+.registration-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main section */
+/* main {
+} */
+
+/* Introduction section */
+.introduction {
+  position: relative;
+}
+
+.introduction::before {
+  background-image: url(/images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+}
+
+.introduction-wrapper {
+  isolation: isolate;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction-text h1 {
+  font-size: 32px;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.introduction-text p {
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.membership p {
+  text-align: center;
+}
+
+.membership-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 16px 0 0;
+}
+
+#email {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid var(--border-color);
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.membership-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: var(--netflix-red-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.membership-btn:hover {
+  background-color: var(--netflix-hover-color);
+}
+
+/* Scroll to top */
+#arrow-btn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: var(--netflix-red-color);
+  color: var(--background-color);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#arrow-btn:hover {
+  opacity: 1;
+}
+
+#arrow-btn:active {
+  background-color: var(--netflix-hover-color);
+}
+
+/* Movie section */
+.movie-section {
+  margin: 50px 0;
+}
+
+.movie-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.movies {
+  padding: 10px;
+}
+
+.movie-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.movie img {
+  height: 250px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.movie img:hover {
+  transform: scale(1.1);
+}
+
+/* .more-movies {
+} */
+
+.more-movies-btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--netflix-red-color);
+  cursor: pointer;
+}
+
+.more-movies-btn:hover {
+  background-color: var(--netflix-hover-color);
+}
+
+.more-movies-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin: 50px 0;
+}
+
+.questions-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.questions-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px 20px;
+}
+
+.question {
+  padding: 5px 10px;
+}
+
+.question a {
+  color: var(--questions-color);
+  text-decoration-color: var(--questions-color);
+}
+
+.question a:active {
+  color: var(--netflix-hover-color);
+}

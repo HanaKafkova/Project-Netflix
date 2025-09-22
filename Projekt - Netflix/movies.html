@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/moviesStyle.css" />
+    <title>Netflix - filmy</title>
+  </head>
+  <body>
+    <!-- Movie database -->
+    <section class="movie-database">
+      <div class="movie-database-wrapper">
+        <div class="home-page">
+          <div class="home-page-btn">
+            <a href="index.html">Úvodní strana</a>
+          </div>
+        </div>
+        <div class="database">
+          <select name="movies" id="movies">
+            <option selected disabled class="movie-option" value="">
+              Vyberte možnost
+            </option>
+            <!-- <hr /> -->
+            <option class="movie-option" value="girl">Girl</option>
+            <option class="movie-option" value="boy">Boy</option>
+            <option class="movie-option" value="avengers">Avengers</option>
+            <option class="movie-option" value="horror">Horror</option>
+          </select>
+        </div>
+        <div class="movie-category" id="movie-category"></div>
+      </div>
+    </section>
+    <script src="./dist/movies.js" defer></script>
+  </body>
+</html>

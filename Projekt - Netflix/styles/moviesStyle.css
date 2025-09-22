@@ -1,0 +1,107 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --netflix-red-color: rgb(214, 28, 28);
+  --netflix-hover-color: rgb(193, 17, 25);
+  --option-color: #000000e4;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Movie database */
+/* .movie-database {
+} */
+
+.movie-database-wrapper {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.home-page-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--netflix-red-color);
+  cursor: pointer;
+}
+
+.home-page-btn:hover {
+  background-color: var(--netflix-hover-color);
+}
+
+.home-page-btn a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#movies {
+  background-color: var(--option-color);
+  border: 1px solid var(--netflix-red-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.movie-category {
+  text-align: center;
+}
+
+.movie-poster {
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+}
+
+/* Query */
+@media (min-width: 400px) {
+  .movie-database-wrapper {
+    gap: 20px;
+  }
+
+  .home-page-btn {
+    padding: 10px 15px;
+  }
+
+  .home-page-btn a {
+    font-size: 17px;
+  }
+
+  #movies {
+    font-size: 17px;
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .movie-database-wrapper {
+    gap: 25px;
+  }
+
+  .home-page-btn a {
+    font-size: 18px;
+  }
+
+  #movies {
+    font-size: 18px;
+  }
+}

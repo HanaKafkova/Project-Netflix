@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/registrationStyle.css" />
+    <title>Netflix - registrace</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-wrapper">
+        <img
+          class="header-image"
+          src="images/netflix-logo.png"
+          alt="netflix-logo"
+        />
+        <div class="home-page-btn">
+          <a class="home-page-link" href="index.html">Úvodní strana</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Registration section -->
+    <section class="registration">
+      <div class="registration-wrapper">
+        <form class="registration-form" action="">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            autocomplete="given-name"
+            placeholder="Křestní jméno"
+            required
+          />
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="family-name"
+            placeholder="Příjmení"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            placeholder="Přihlašovací email"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="new-password"
+            placeholder="Vaše heslo"
+            required
+          />
+          <input
+            type="password"
+            name="password-confirm"
+            id="password-confirm"
+            autocomplete="new-password"
+            placeholder="Heslo znovu"
+            required
+          />
+          <button class="send-btn" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </section>
+    <script src="./dist/registration.js" defer></script>
+  </body>
+</html>
